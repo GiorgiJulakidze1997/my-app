@@ -1,38 +1,179 @@
 .App {
-  text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  border-radius: 15px;
+  background-color: #15263f;
+  margin: auto;
+  max-width: 350px;
+  max-height: 596px;
+  padding: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.images-box:hover {
+  cursor: pointer;
+  background-color: #00FFF8;
+
+}
+.equilibrium-img {
+  width: 302px;
+  border-radius: 8px;
+  opacity: 1;
+
+}
+.equilibrium-img:hover + .view-img{
+  display: inline;
+
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.equilibrium-img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  /* color: #00FFF8; */
+  /* background-color: #00FFF8; */
+
+
+}
+
+.view-img {
+  display: none;
+  /* opacity: 0; */
+  position: absolute;
+  margin-left: -175px;
+  margin-top: 131px;
+  
+  
+}
+
+.view-img:hover {
+  /* opacity: 1; */
+  display: inline;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.title {
   color: white;
+  margin-top: 24px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.blue-hover:hover{
+  color: #00FFF8;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  color: #8BACD9;
+  margin-top: 16px;
+
+
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+}
+
+.numbers-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.etherium-box {
+  display: flex;
+  gap: 7px;
+}
+
+.text-etherium {
+  color:#00FFF8;
+
+
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+}
+
+.clock-box {
+  display: flex;
+  gap: 7px;
+}
+
+.clock-text {
+  color: #8BACD9;
+
+
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+}
+
+.avatar-box {
+  margin-top: 16px;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.avatarImg {
+  width: 33px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.avatar-texts-box {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.founder-index {
+  color: #8BACD9;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.founder-name {
+  color: white;
+  margin-left: 5px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
 }
